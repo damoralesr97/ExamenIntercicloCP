@@ -6,7 +6,8 @@ realize lo mismo que en el secuencial, seleccionar el numero mayor y luego conta
 Una vez realizado esto sume los resultados que me devuelven todos los procesos para asi tener el numero de veces que se repite
 el numero mayor en toda la lista.
 
-![Alt text](img/mpi.png?raw=true "MPI")
+![Alt text](img/procesos.png?raw=true "Procesos")
+
 
 MPI: mpiexec -n 4 python Morales_David_ExamenMPI.py
 
@@ -16,3 +17,5 @@ Para los trabajadores comienzan en espera hasta que reciban el pedazo de matriz 
 matriz realizo lo mismo que en el secuencial, contar cuantas veces se repite el numero mayor en ese pedazo de matriz. Una
 vez hecho esto envio este conteo al proceso 0 o maestro que se encuentra en espera de estos resultados.
 Volviendo al proceso 0 una vez que recibe el resultado suma esos conteos y asi tendriamos el conteo global de toda la lista.
+
+![Alt text](img/mpi.png?raw=true "MPI")
